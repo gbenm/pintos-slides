@@ -17,6 +17,8 @@ jobs:
         run: npm install
       - name: Build website
         run: npm run build
+      - name: Remove node_modules
+        run: rm -r node_modules
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v1.0.7
         with:
