@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/github-dark.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section>
+          <h1 class="r-fit-text">CC7 - Sistemas Operativos</h1>
+          <span>PintOS</span>
+        </section>
+
+        <section>
+          <h2>Contenido</h2>
+          <ul>
+            <li><a href="#/2">Herramientas para colaborar en equipo</a></li>
+            <li><a href="#/6">Herramientas para el flujo de trabajo</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h1 class="r-fit-text">Herramientas para colaborar en equipo</h1>
+        </section>
+
+        <section>
+          <section>
+            <h2>Notion</h2>
+            <img class="r-stretch" src="img/notion-threads.png" alt="notion threads">
+          </section>
+          <section>
+            <h2>Notion</h2>
+            <img class="r-stretch" src="img/notion-filesys.png" alt="notion filesys">
+          </section>
+        </section>
+
+        <section data-background-gradient="linear-gradient(to bottom, #191919, #121336)">
+          <img class="r-stretch" src="img/discord-logo-blue.png" alt="discord logo">
+        </section>
+
+        <section>
+          <section>
+            <h2>Github - Issues</h2>
+            <img class="r-stretch" src="img/github-issues.png" alt="github issues">
+          </section>
+          <section>
+            <h2>Github - Milestones</h2>
+            <img class="r-stretch" src="img/github-milestones.png" alt="github milestones">
+          </section>
+          <section>
+            <h2>Github - Milestone Issues</h2>
+            <img class="r-stretch" src="img/github-milestone-threads.png" alt="github milestone issues">
+          </section>
+        </section>
+
+        <section>
+          <h1 class="r-fit-text">Herramientas para el flujo de trabajo</h1>
+          <p>
+            <a href="https://gbenm.github.io/pintos-utils">PintOS Utils</a>
+          </p>
+        </section>
+
+        <section
+          data-background-iframe="https://www.youtube.com/embed/videoseries?list=PLBJxcn47DPaI2lz--VmW1M-Pwfxof59wK"
+          data-background-interactive
+        >
+        </section>
+
+        <section>
+          <section>
+            <h2>PintOS Github action</h2>
+            <p><a href="https://gbenm.github.io/pintos-utils/github-action">Documentación</a></p>
+          </section>
+          <section>
+            <h2>Github Action</h2>
+            <img src="img/github-actions.png" alt="github actions" class="r-stretch">
+          </section>
+          <section>
+            <h2>Por fases del proyecto</h2>
+            <img src="img/github-action-results.png" alt="github action results" class="r-stretch">
+          </section>
+          <section>
+            <h2>Resultados</h2>
+            <img src="img/github-watch-results.png" alt="github watch results" class="r-stretch">
+          </section>
+          <section>
+            <h2>Configuración de Assertions</h2>
+            <pre><code data-line-numbers="0|2-4|3|6-8|7">
+              function threads(grade, total) {
+                return grade >= 100
+              }
+
+              function userprog(grade, total) {
+                return grade >= 50
+              }
+
+            </code></pre>
+          </section>
+        </section>
+
+        <section data-auto-animate>
+          <h2>Pintos VS Code</h2>
+        </section>
+        <section data-auto-animate>
+          <h2>Pintos VS Code</h2>
+          <ul>
+            <li class="fragment highlight-step">
+              Crear un nuevo proyecto
+            </li>
+            <li class="fragment highlight-step">
+              Usar un contenedor de docker para desarrollo
+            </li>
+            <li class="fragment highlight-step">
+              Testing & Debugging
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Pintos VS Code</h2>
+          <p>Demo</p>
+        </section>
+
+        <section>
+          <h1>Gracias :)</h2>
+          <p>
+            A dar lo mejor!! 💪
+          </p>
+        </section>
+			</div>
+		</div>
+
+    <style>
+      code {
+        border-radius: 10px;
+      }
+    </style>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
